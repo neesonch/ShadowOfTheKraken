@@ -17,8 +17,8 @@ public class characterController : MonoBehaviour {
         // CN 11/05/18: WASD movement
         float forwardOrBack = Input.GetAxis("Vertical") * speed;
         float leftOrRight = Input.GetAxis("Horizontal") * speed;
-        forwardOrBack = forwardOrBack * Time.deltaTime;
-        leftOrRight = leftOrRight * Time.deltaTime;
+        forwardOrBack *= Time.deltaTime;
+        leftOrRight *= Time.deltaTime;
         transform.Translate(leftOrRight, 0, forwardOrBack);
 		
         if (Input.GetKeyDown(KeyCode.Escape)) {
