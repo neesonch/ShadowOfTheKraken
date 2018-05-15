@@ -12,7 +12,7 @@ public class characterController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         // CN 11/05/18: WASD movement
         float forwardOrBack = Input.GetAxis("Vertical") * speed;
